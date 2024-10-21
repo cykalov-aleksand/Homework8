@@ -41,7 +41,7 @@ public class Main {
         }
         System.out.println("\n---------------Задание 3-----------------");
         System.out.print("Элементы массива типа int в обратном порядке intNumbers[" + intNumbers.length + "]: ");
-        for (int number = (intNumbers.length - 1); number >= 0; number--) {
+        for (int number = intNumbers.length - 1; number >= 0; number--) {
             if (number == 0) {
                 System.out.println(intNumbers[number]);
                 break;
