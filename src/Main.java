@@ -68,7 +68,7 @@ public class Main {
         System.out.println("В массиве intNumbers[" + intNumbers.length + "] = " + Arrays.toString(intNumbers) + " в нечётных числах добавлена 1");
         for (byte number = 0; number < intNumbers.length; number++) {
             if (intNumbers[number] % 2 != 0) {
-                intNumbers[number] += 1;
+                intNumbers[number] ++;
             }
         }
         System.out.println("в результате получили массив intNumbers[" + intNumbers.length + "]=" + Arrays.toString(intNumbers));
