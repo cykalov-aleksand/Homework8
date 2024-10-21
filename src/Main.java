@@ -16,7 +16,7 @@ public class Main {
 
         System.out.println("\n---------------Задание 2-----------------");
         System.out.print("Элементы массива типа int intNumbers[" + intNumbers.length + "]: ");
-        for (byte number = 0; number < intNumbers.length; number++) {
+        for (int number = 0; number <intNumbers.length; number++) {
             if (number == intNumbers.length - 1) {
                 System.out.println(intNumbers[intNumbers.length - 1]);
                 break;
@@ -24,7 +24,7 @@ public class Main {
             System.out.print(intNumbers[number] + ", ");
         }
         System.out.print("Элементы массива типа float floatNumbers[" + floatNumbers.length + "]: ");
-        for (byte number = 0; number < floatNumbers.length; number++) {
+        for (int number = 0; number < floatNumbers.length; number++) {
             if (number == floatNumbers.length - 1) {
                 System.out.println(floatNumbers[floatNumbers.length - 1]);
                 break;
@@ -41,7 +41,7 @@ public class Main {
         }
         System.out.println("\n---------------Задание 3-----------------");
         System.out.print("Элементы массива типа int в обратном порядке intNumbers[" + intNumbers.length + "]: ");
-        for (byte number = (byte)(intNumbers.length - 1); number >= 0; number--) {
+        for (int number = (intNumbers.length - 1); number >= 0; number--) {
             if (number == 0) {
                 System.out.println(intNumbers[number]);
                 break;
@@ -49,7 +49,7 @@ public class Main {
             System.out.print(intNumbers[number] + ", ");
         }
         System.out.print("Элементы массива типа float в обратном порядке floatNumbers[" + floatNumbers.length + "]: ");
-        for (byte number = (byte)(floatNumbers.length - 1); number >= 0; number--) {
+        for (int number = floatNumbers.length - 1; number >= 0; number--) {
             if (number == 0) {
                 System.out.println(floatNumbers[number]);
                 break;
@@ -66,7 +66,7 @@ public class Main {
         }
         System.out.println("\n---------------Задание 4-----------------");
         System.out.println("В массиве intNumbers[" + intNumbers.length + "] = " + Arrays.toString(intNumbers) + " в нечётных числах добавлена 1");
-        for (byte number = 0; number < intNumbers.length; number++) {
+        for (int number = 0; number < intNumbers.length; number++) {
             if (intNumbers[number] % 2 != 0) {
                 intNumbers[number] ++;
             }
